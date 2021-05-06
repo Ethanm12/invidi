@@ -1,0 +1,196 @@
+/*! purgecss start ignore */
+.spacer {
+  background-color: $officecrew-dark-blue;
+  height: 125px;
+}
+.top-banner {
+  background-color: $officecrew-dark-blue;
+  height: 125px;
+
+  position:fixed;
+  width: 100%;
+  top: 0;
+  z-index: 20;
+  .nav {
+    text-align: justify;
+
+    li {
+      a {
+        padding-top: 35px;
+      }
+    }
+  }
+  .navbar {
+    padding:0;
+    height: 100%;
+    .officecrew-logo {
+      padding-left: 0;
+      img {
+        margin-top: 0;
+        margin-left: 5px;
+        width: 100%;
+        height: 100%;
+        @include media-breakpoint-down(sm) {
+          width: 80%;
+        }
+        @include media-breakpoint-down(xs) {
+          width: 70%;
+        }
+      }
+    }
+  }
+  .nav-group {
+    position: absolute;
+    right: 0;
+  }
+
+  .nav-item {
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+
+  .hamburger {
+    display: none;
+    @include media-breakpoint-down(md) {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  .hamburger-container {
+    display: none;
+  }
+
+  .overlay {
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+  }
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.nav-item, .ham-link {
+  &.active {
+    border-bottom: 2px solid $officecrew-white;
+  }
+}
+
+
+// HAMBURGER FROM BOILERPLATE
+
+$width: 2rem;
+$height: 3rem;
+$line-height: 3px;
+$line-gap: 6px;
+
+.hamburger {
+  width: $width;
+  height: $height;
+  position: relative;
+  float: right;
+  margin-top: 40px;
+  margin-right: 40px;
+  z-index: 100;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+
+  span {
+    display: block;
+    position: absolute;
+    height: $line-height;
+    width: 100%;
+    background: $officecrew-white;
+    border-radius: 9px;
+    opacity: 1;
+    right: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+
+  span:nth-child(1) {
+    top: 0px;
+  }
+
+  span:nth-child(2), span:nth-child(3) {
+    top: #{$line-gap + $line-height};
+  }
+
+  span:nth-child(4) {
+    top: #{2 * $line-gap + 2 * $line-height};
+  }
+
+  &.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+  }
+
+  &.open span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+
+  &.open span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  &.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+  }
+}
+
+.overlay {
+  z-index: 50;
+  position: fixed;
+  background: $officecrew-dark-blue;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+
+  .container {
+    text-align: center;
+  }
+
+  &.open {
+    opacity: .95;
+    visibility: visible;
+    height: 250px;
+    ul {
+      list-style-type: none;
+      a{
+        font-size: 18px;
+        font-weight: 700;
+        color: $officecrew-white;
+        text-transform: uppercase;
+        &:hover {
+        }
+      }
+      li {
+        animation: fadeInRight .5s ease forwards;
+        animation-delay: .35s;
+        &:nth-of-type(2) {
+          animation-delay: .4s;
+        }
+        &:nth-of-type(3) {
+          animation-delay: .45s;
+        }
+        &:nth-of-type(4) {
+          animation-delay: .50s;
+        }
+      }
+    }
+  }
+}
+/*! purgecss end ignore */
+// END HAMBURGER

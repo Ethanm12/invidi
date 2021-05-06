@@ -1,0 +1,105 @@
+footer {
+  background: $officecrew-dark-blue;
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  @include media-breakpoint-down(sm) {
+    align-items: center;
+  }
+  .footer-wave{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: $officecrew-white;
+    .call-to-action-fill-in{
+      position: absolute;
+      bottom: 0%;
+      width: 100%;
+      height: 10px;
+      background-color: $officecrew-dark-blue;
+  }
+  }
+  .contact-details{
+    padding-top: 75px;
+        margin: 100px 0;
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+      margin: 15px 0;
+    }
+  }
+  .contact-email{
+    @include media-breakpoint-down(md) {
+      text-align: center;
+    }
+  }
+
+  .contact-social{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 150px ;
+    @include media-breakpoint-down(sm) {
+      display: inline;
+      text-align: center;
+      margin: 50px 0;
+      padding-top: 35px;
+    }
+    .contact-social-icons{
+      li{
+        float: right;
+        @include media-breakpoint-down(sm){
+          float: none;
+        }
+      }
+      ul li {
+        display: inline-flex;
+        justify-self: flex-end;
+        margin: 5px;
+        &:hover{
+         cursor: pointer; 
+        }
+      }
+      img{
+        width: 30px;
+        height: auto;
+      }
+    }
+  }
+  //Boilerplate code
+  .td-logo {
+    float: right !important;
+    opacity: 0.2;
+    padding: 25px 0;
+    transition: .5s;
+    &:hover {
+      opacity: 0.3;
+    }
+    a {
+      display: block;
+      &:hover:after,
+      &:focus:after,
+      &:active:after {
+        width: 0;
+        right: 0 !important;
+        position: relative !important;
+      }
+    }
+    p {
+      color: $officecrew-dark-blue;
+      font-family: 'Trocchi', serif;
+      font-weight: 400;
+      font-size: 12px;
+      float: right;
+      padding-top: 20px;
+      padding-right: 5px;
+    }
+    img {
+      margin-top: -10px;
+      float: right;
+      width: 100px;
+    }
+  }
+}

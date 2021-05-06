@@ -1,0 +1,39 @@
+
+.call-to-action-container{
+    height: auto;
+    width: 100%;
+    background-color: $officecrew-light-blue;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    .call-to-action-wave{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color: $officecrew-dark-blue;
+        max-height: 100%;
+        height: auto;
+        .wave-img {
+            max-height: 100%;
+        }
+        .call-to-action-fill-in{
+            position: absolute;
+            bottom: 0%;
+            width: 100%;
+            height: 50%;
+            background-color: $officecrew-light-blue;
+            @include media-breakpoint-down(md){
+                height: 80%;
+            }
+        }
+    }
+    .call-to-action-details{
+        padding-top: 75px;
+        margin: 100px 0;
+        @include media-breakpoint-down(sm){
+            margin: 50px 0;
+            padding-top: 35px;
+        }
+    }
+  }

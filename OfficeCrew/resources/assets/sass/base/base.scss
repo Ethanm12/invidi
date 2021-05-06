@@ -1,0 +1,73 @@
+* {
+  font-family: $font-family-sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow-y: scroll;
+  line-height: 1.55;
+  font-size: 1rem;
+  color: $officecrew-white;
+  background: $officecrew-dark-blue;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+h1, h2, h3 {
+  font-size: 2.25rem;
+  @include media-breakpoint-down(lg) {
+    font-size: 1.8rem;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: 1.6rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 1.4rem;
+  }
+}
+
+h3 {
+  color: $officecrew-dark-blue;
+}
+
+h4 {
+  font-size: 1.15rem;
+}
+
+p {
+  font-size: 1rem;
+
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.small-margin {
+  margin: 15px;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.container-top {
+  padding-top: 150px;
+  @include media-breakpoint-down(sm) {
+    padding-top: 100px;
+  }
+}
+
+a {
+  color: $officecrew-white;
+  &:hover {
+    color: $officecrew-white;
+  }
+}
+

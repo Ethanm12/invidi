@@ -1,0 +1,27 @@
+// Foundations
+@import "fonts";
+@import "variables";
+@import "bootstrap";
+@import "mixins";
+
+// Components
+@import "components/buttons.scss";
+@import "components/callToAction.scss";
+@import "components/accreditations.scss";
+
+// Base
+@import "base/nav";
+@import "base/footer";
+@import "base/base";
+
+// Utils
+@import "utils/paperclips.scss";
+
+// Pages
+@import "pages/home";
+@import "pages/contact";
+
+
+
+
+

@@ -1,0 +1,50 @@
+.paperclip1 {
+    position: absolute;
+    top: 0;
+    margin-top: -17px;
+    right: 0;
+    left: 10%;
+    @include media-breakpoint-down(sm){
+      margin-top: -14px;
+    }
+    img {
+      transform: rotate(310deg);
+      width: 40px;
+      height: auto;
+      @include media-breakpoint-down(sm){
+        width: 30px;
+      }
+    }
+  }
+  
+  .paperclip2 {
+    position: absolute;
+    top: 0;
+    margin-top: -6px;
+    right: 15%;    
+    @include media-breakpoint-down(sm){
+      margin-top: -6px;
+    }
+    img {
+      width: 40px;
+      height: auto;
+      @include media-breakpoint-down(sm){
+        width: 30px;
+      }
+    }
+  }
+  
+  .paperclip3 {
+    position: absolute;
+    top: 37%;
+    right: 15%;
+    transform: translateY(-15%);
+    img {
+      width: 40px;
+      height: auto;
+      @include media-breakpoint-down(sm){
+        width: 30px;
+      }
+    }
+  }
+  

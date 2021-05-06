@@ -1,0 +1,49 @@
+.page-contact {
+  flex: 1 0 auto;
+  .contact-curve-bottom {
+    padding-bottom: 50px;
+  }
+
+  .top {
+    padding-top: 50px;
+    padding-bottom: 5px;
+  }
+
+
+  .form-control{
+    border: none;
+    border-radius: 0;
+    color: $officecrew-dark-blue;
+
+  }
+  ::placeholder { /* Firefox, Chrome, Opera */
+    color: $officecrew-light-blue;
+  }
+  //
+  //:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  //  color: $officecrew-light-blue;
+  //}
+  //
+  //::-ms-input-placeholder { /* Microsoft Edge */
+  //  color: $officecrew-light-blue;
+  //}
+  .form-btn {
+    background-color: $officecrew-dark-blue;
+    border: none;
+    color: white;
+    font-size: 24px;
+    border-radius: 0;
+    margin: 20px 0;
+    &:hover {
+      background-color: white;
+      color: $officecrew-dark-blue;
+      cursor: pointer;
+    }
+    @include  media-breakpoint-down(md){
+      width: 100%;
+    }
+    @include  media-breakpoint-down(sm){
+      font-size: 20px;
+    }
+  }
+}
