@@ -8,7 +8,7 @@ These websites i have completely developed myself:
 
 Perreaux is still in development and waiting on quite a few things. It will run slow for you currently because the server is only Singapore.
 
-- Perreaux.tdserver.co.nz
+- Perreaux.heresy.co.nz
 
 ## Website briefs
 
